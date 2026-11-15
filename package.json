@@ -1,0 +1,12 @@
+{
+  "name": "creator-dns-cutover",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "start": "node --experimental-strip-types src/cutover_service.ts",
+    "test": "node --experimental-strip-types src/cutover_service.test.ts"
+  },
+  "dependencies": { "zod": "^3.23.8" },
+  "devDependencies": { "typescript": "^5.6.3", "@types/node": "^22.0.0" }
+}
